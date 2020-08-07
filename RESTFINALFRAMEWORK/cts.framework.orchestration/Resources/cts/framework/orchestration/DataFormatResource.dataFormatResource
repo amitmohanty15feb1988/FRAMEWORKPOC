@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:eb007ee0-8b6c-4c5f-9f50-2dcc4ada4398="http://ns.tibco.com/bw/palette/dataformat/eb007ee0-8b6c-4c5f-9f50-2dcc4ada4398" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_JoeeccXrEeqRF9auyN48JQ" name="cts.framework.orchestration.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_VICSAMXrEeqRF9auyN48JQ" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/eb007ee0-8b6c-4c5f-9f50-2dcc4ada4398"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_JofFgMXrEeqRF9auyN48JQ" formatType="Delimiter separated" colSeparator=";" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="eb007ee0-8b6c-4c5f-9f50-2dcc4ada4398:root" fieldOffsetsStr="Source(0,0)&#xA;Target(0,0)&#xA;Artiffacts(0,0)">
+    <fieldOffsets xmi:id="_bhRvMMXvEeqRF9auyN48JQ" name="Source"/>
+    <fieldOffsets xmi:id="_c7d1QMXvEeqRF9auyN48JQ" name="Target"/>
+    <fieldOffsets xmi:id="_gy5Z0MXvEeqRF9auyN48JQ" name="Artiffacts"/>
+  </jndi:configuration>
+</jndi:namedResource>

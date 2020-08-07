@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/cts.framework.orchestration/Service Descriptors/cts.framework.orchestration.FrameworkRestService-framework.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.org/Input"
+}]}

@@ -1,0 +1,5 @@
+description.autobuilding=false
+description.buildorder=cts.framework/cts.framework.application
+description.defaultbuildorder=false
+eclipse.preferences.version=1
+version=1

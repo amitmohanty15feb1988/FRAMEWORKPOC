@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_wE2IoMXpEeqRF9auyN48JQ" targetNamespace="http://tns.tibco.com/bw/composite/cts.framework.orchestration" name="cts.framework.orchestration" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_tF9gMMXqEeqRF9auyN48JQ" name="framework" promote="ComponentFrameworkRestService/framework">
+    <sca:interface.wsdl xmi:id="_tGFcAMXqEeqRF9auyN48JQ" interface="http://xmlns.example.com/20200714212217PLT#wsdl.interface(framework)" scaext:wsdlLocation="../Processes/cts/framework/orchestration/FrameworkRestService.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_tGlyUMXqEeqRF9auyN48JQ" name="RestService" path="/framework" docBasePath="http://localhost:7777/cts.framework.orchestration" docResourcePath="framework" basePath="/" connector="cts.framework.orchestration.framework" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/cts.framework.orchestration.FrameworkRestService-framework.json">
+      <operation xmi:id="_tGpcsMXqEeqRF9auyN48JQ" operationName="post" nickname="post-framework" httpMethod="POST" notes="postFramework" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_tGvjUMXqEeqRF9auyN48JQ"/>
+      <advancedConfig xmi:id="_tGlyUcXqEeqRF9auyN48JQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_tGpcscXqEeqRF9auyN48JQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_wd6I4MXpEeqRF9auyN48JQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_weCrwMXpEeqRF9auyN48JQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_weHkQMXpEeqRF9auyN48JQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_weL1sMXpEeqRF9auyN48JQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_weQuMMXpEeqRF9auyN48JQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_weU_oMXpEeqRF9auyN48JQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_weYqAMXpEeqRF9auyN48JQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iVACkMXrEeqRF9auyN48JQ" name="PropFilepath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Q4VvsMXxEeqRF9auyN48JQ" name="TemplateLocation" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="__ofcsMXpEeqRF9auyN48JQ" name="ComponentFrameworkRestService" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__ofcscXpEeqRF9auyN48JQ" processName="cts.framework.orchestration.FrameworkRestService"/>
+    <sca:service xmi:id="_tF4nsMXqEeqRF9auyN48JQ" name="framework">
+      <sca:interface.wsdl xmi:id="_tF510MXqEeqRF9auyN48JQ" interface="http://xmlns.example.com/20200714212217PLT#wsdl.interface(framework)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

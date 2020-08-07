@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Input" xmlns:tns="http://www.example.org/Input" elementFormDefault="qualified">
+
+    <element name="RestInput" type="tns:RestInputType"></element>
+
+    <complexType name="RestInputType">
+    	<sequence>
+    		<element name="ProjectLocation" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="Package" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="PropertiesFileLocation" type="string"
+    			minOccurs="0" maxOccurs="1">
+    		</element>
+    		<element name="SourceType" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="DestinationType" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+            <element name="Enrichment" type="string" minOccurs="0" maxOccurs="1"></element>
+            <element name="Transformation" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="Routing" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>
